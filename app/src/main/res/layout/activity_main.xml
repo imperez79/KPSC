@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C4565"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/create_route"
+        android:layout_width="249dp"
+        android:layout_height="59dp"
+        android:text="@string/btn_create_route"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_kpsc"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/valuestream" />
+
+    <EditText
+        android:id="@+id/name_kpsc"
+        android:layout_width="355dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:background="#DFEAEA"
+        android:ems="10"
+        android:hint="@string/text_name_kpsc"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="393dp"
+        android:layout_height="41dp"
+        android:duplicateParentState="false"
+        android:editable="false"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical|end"
+        android:text="@string/author"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

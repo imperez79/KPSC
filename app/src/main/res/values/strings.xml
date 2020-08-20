@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ПОМОЩНИК ЛИДЕРА ИЗМЕНЕНИЙ</string>
+
+    <string name="name_process_route">Имя потока создания</string>
+    <string name="btn_create_route">Начать</string>
+    <string name="btn_save_route">Сохранить</string>
+    <string name="list_operation_route">Перечень операций</string>
+    <string name="name_operation">Наименование</string>
+    <string name="note_operation">Описание операции</string>
+    <string name="wip_before_operation">НЗП перед операцией</string>
+    <string name="wip_after_operation">НЗП после</string>
+    <string name="btn_photo_operation">Фото</string>
+    <string name="btn_create_operation">Новая Операцию</string>
+    <string name="text_name_kpsc">Введите название КПСЦ</string>
+    <string name="oper_wip_before">До</string>
+    <string name="oper_wip_after">После</string>
+    <string name="label_for_time_oper">Время на  операцию</string>
+    <string name="oper_time_total">Время работы</string>
+    <string name="oper_time_waiting">Время Переналадки</string>
+    <string name="btn_save_operation">Сохранить</string>
+    <string name="img_operation">Фото операции</string>
+    <string name="description_operation">Описание операции</string>
+    <string name="wip">Незавершенное производство</string>
+    <string name="author">\u00A9 Скрынский О.Е. 2020</string>
+
+
+</resources>
