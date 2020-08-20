@@ -39,8 +39,7 @@ public class RecViewAdapter extends RecyclerView.Adapter<RecViewAdapter.Operatio
     @Override
     public OperationViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_item, parent, false);
-        OperationViewHolder ovh = new OperationViewHolder(v);
-        return ovh;
+        return new OperationViewHolder(v);
 
     }
 

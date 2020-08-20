@@ -1,6 +1,5 @@
 package com.example.kpsc;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,9 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -18,19 +15,14 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
 import com.example.kpsc.model.Operation;
-import com.example.kpsc.model.Route;
 import com.example.kpsc.util.DataBaseHelper;
-
 import com.example.kpsc.util.TimeUtil;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -67,10 +59,6 @@ public class OperationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_operation);
         Intent editIntent = getIntent();
-        if(editIntent.hasExtra("operation")){
-        Operation editOperation = (Operation) editIntent.getSerializableExtra("operation") ;
-            assert editOperation != null;
-            idOperation = editOperation.getId();}
         mSaveOperation = findViewById(R.id.btn_save_operation);
         mDescription = findViewById(R.id.description);
         mCamera = findViewById(R.id.take_picture);

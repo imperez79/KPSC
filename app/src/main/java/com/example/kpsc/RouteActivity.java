@@ -24,14 +24,14 @@ import java.util.ArrayList;
 public class RouteActivity extends AppCompatActivity {
     private static final String LIST= "operations";
     private  String jsonString;
-    TextView mName;
-    Button mCreateOperation;
-    Button mSaveRoute;
-    RecyclerView rv;
-    RecViewAdapter recViewAdapter;
-    SharedPreferences preferences;
-    ArrayList<Operation> operations ;
-    Route route;
+    private TextView mName;
+    private Button mCreateOperation;
+    private Button mSaveRoute;
+    private RecyclerView rv;
+    private RecViewAdapter recViewAdapter;
+    private SharedPreferences preferences;
+    private ArrayList<Operation> operations ;
+    private Route route;
    public static final String APP_Prefefnces ="p";
 
 
